@@ -5,6 +5,7 @@ touch arquivo01
 touch arquivo02
 touch arquivo03
 git add .
+git diff
 git commit -m "adicionando arquivos iniciais"
 nano arquivo01
 cat arquivo01
