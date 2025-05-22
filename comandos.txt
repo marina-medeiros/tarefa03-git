@@ -5,8 +5,16 @@ touch arquivo01
 touch arquivo02
 touch arquivo03
 git add .
-git diff
 git commit -m "adicionando arquivos iniciais"
+nano arquivo01
+nano arquivo02
+git status
+git diff
+git add .
+git commit -m "primeiras alterações nos arquivos 01 e 02"
+git log
+git log --graph --oneline
+git revert 6a133ad
 nano arquivo01
 cat arquivo01
 git stash
@@ -17,15 +25,12 @@ git stash pop
 git add .
 git commit -m "Alteração do arquivo01 apos stash"
 git reflog
-git log --graph --oneline
 git remote add origin git@github.com:marina-medeiros/tarefa03-git.git
 git branch -M main
 git push -u origin main
-git log
 git tag -a v1.0 a109b31 -m "Versão inicial estável"
 git push origin v1.0
-touch comandos.txt
 nano comandos.txt
-git add .
-git commit -m "Adicionando arquivo de comandos"
-git push
+git add comandos.txt
+git commit -m "Adiciona arquivo de comandos"
+git push origin main
