@@ -1,0 +1,30 @@
+mkdir tarefa03
+cd tarefa03
+git init
+touch arquivo01
+touch arquivo02
+touch arquivo03
+git add .
+git commit -m "adicionando arquivos iniciais"
+nano arquivo01
+cat arquivo01
+git stash
+git branch develop
+git checkout develop
+git checkout master
+git stash pop
+git add .
+git commit -m "Alteração do arquivo01 apos stash"
+git reflog
+git log --graph --oneline
+git remote add origin git@github.com:marina-medeiros/tarefa03-git.git
+git branch -M main
+git push -u origin main
+git log
+git tag -a v1.0 a109b31 -m "Versão inicial estável"
+git push origin v1.0
+touch comandos.txt
+nano comandos.txt
+git add .
+git commit -m "Adicionando arquivo de comandos"
+git push
